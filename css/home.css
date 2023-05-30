@@ -1,0 +1,60 @@
+/*start golobal */
+:root {
+  --main-color: #59ab6e;
+  --second-color: #212934;
+  --baby-blue-color: #cfd6e1;
+  --bg-section-color: #e9eef5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300 !important;
+}
+/*end golobal */
+
+/* start landing */
+.landing {
+  background-color: #efefef;
+}
+.landing .sub-title h1 {
+  font-weight: 400;
+  color: var(--main-color);
+}
+.landing .sub-title h1 span {
+  font-weight: 100;
+}
+.landing .sub-title h3 {
+  font-weight: 300;
+  font-size: 30px;
+}
+.landing .sub-title p {
+  font-size: 18px;
+}
+.landing .sub-title a {
+  font-weight: 300;
+  color: var(--main-color);
+}
+/* end landing */
+
+/* start categories  */
+.categories img {
+  width: 290px;
+  border: 1px solid var(--second-color) 39;
+}
+/* end categories  */
+
+/* start featured  */
+.featured {
+  background-color: var(--bg-section-color);
+}
+.featured .yellow {
+  color: #ede861;
+}
+.featured .card {
+  height: 500px;
+}
+.featured .card a {
+  color: var(--main-color) !important;
+  font-size: 30px;
+  font-weight: 300;
+}
+/* end featured  */

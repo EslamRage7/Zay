@@ -1,0 +1,231 @@
+/*start golobal */
+:root {
+  --main-color: #59ab6e;
+  --second-color: #212934;
+  --baby-blue-color: #cfd6e1;
+  --bg-section-color: #e9eef5;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300 !important;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  color: var(--main-color) !important;
+  font-weight: 600;
+  font-size: 50px !important;
+}
+.carousel-control-prev {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  left: -3%;
+}
+.carousel-control-next {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  right: -3%;
+}
+.carousel-indicators .swap {
+  background-color: var(--main-color);
+}
+.main-title {
+  font-size: 48px;
+  font-weight: 100;
+}
+.main-p {
+  width: 550px;
+  margin: auto;
+  font-size: 18px;
+}
+/* end golobal */
+
+/* start responsive */
+@media (max-width: 968px) {
+  .landing img {
+    width: 500px;
+    margin: auto;
+  }
+  .carousel-control-prev {
+    left: -25px;
+  }
+  .carousel-control-next {
+    right: -25px;
+  }
+  p {
+    width: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .landing img {
+    width: 350px;
+    margin: auto;
+  }
+  .carousel-control-prev {
+    left: 2px;
+  }
+  .carousel-control-next {
+    right: 2px;
+  }
+  p {
+    width: auto !important;
+  }
+  .about img {
+    width: 400px;
+  }
+  footer .icons {
+    margin-top: 1px !important;
+    padding-top: 1px !important;
+  }
+  .products .box {
+    width: 290px;
+    margin: auto;
+  }
+  .n-visibility {
+    display: none;
+  }
+}
+@media (width: 768px) {
+  .products .box {
+    width: 200px;
+    margin: auto;
+  }
+}
+@media (max-width: 568px) {
+  .featured .card {
+    height: auto !important;
+  }
+  .products .box {
+    width: 300px;
+    margin: auto;
+  }
+}
+/* end responsive */
+
+/* start title */
+.title {
+  background-color: var(--second-color);
+  color: white;
+  font-size: 12px;
+  color: var(--baby-blue-color) !important;
+}
+.mirror {
+  transform: rotate(270deg);
+}
+/* end title */
+
+/* start nav */
+nav {
+  z-index: 2465;
+  background-color: white;
+  transition: 0.3s;
+}
+.green-color {
+  background-color: var(--second-color);
+  color: var(--baby-blue-color) !important;
+}
+.blue-color a {
+  color: var(--baby-blue-color) !important;
+}
+nav .navbar-brand {
+  font-size: 35px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+nav .navbar-brand:hover {
+  color: var(--main-color);
+}
+nav .navbar-toggler {
+  font-size: 25px;
+  border: 1px solid var(--baby-blue-color);
+  color: var(--main-color);
+}
+nav .navbar-toggler:focus {
+  box-shadow: none;
+}
+nav .nav-item a {
+  font-size: 18px;
+  color: var(--second-color);
+  transition: 0.3s;
+  font-weight: 500;
+}
+nav .nav-link:hover {
+  color: var(--main-color);
+}
+
+.nav .icons {
+  font-size: 20px;
+}
+.social {
+  position: relative;
+  margin-top: 15px;
+}
+.social span {
+  position: absolute;
+  background-color: #e9eef5;
+  top: -2px;
+  width: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+/* end nav */
+
+/* start footer  */
+footer {
+  background-color: var(--second-color);
+}
+.head-footer {
+  margin-top: 25px;
+  border-bottom: 1px solid #2d343f;
+  font-size: 30px;
+}
+footer h1 {
+  font-weight: 500;
+}
+footer a {
+  color: var(--baby-blue-color) !important;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+footer .info {
+  font-size: 18px;
+  color: var(--baby-blue-color);
+}
+footer .icons {
+  margin-top: 100px;
+  padding-top: 100px;
+}
+footer .icons .icon {
+  color: var(--baby-blue-color) !important;
+  border: 1px solid #2d343f;
+  padding: 15px 10px;
+  margin-right: 10px;
+  transition: 0.3s;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 5px;
+  cursor: pointer;
+}
+footer .icons .icon:hover {
+  background-color: var(--baby-blue-color) !important;
+  color: var(--second-color) !important;
+}
+footer h2 {
+  color: var(--baby-blue-color) !important;
+  font-weight: 300;
+}
+footer input {
+  background-color: transparent !important;
+  padding: 10px;
+  border: 1px solid #2d343f !important;
+}
+footer p {
+  color: var(--baby-blue-color);
+}
+footer a:hover {
+  color: var(--main-color) !important;
+}
+/* end footer  */
