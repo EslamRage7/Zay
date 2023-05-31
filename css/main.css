@@ -101,6 +101,11 @@ body {
     margin: auto;
   }
 }
+@media (max-width: 468px) {
+  .about img {
+    width: 300px;
+  }
+}
 /* end responsive */
 
 /* start title */
