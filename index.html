@@ -4,428 +4,579 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap" />
-    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <title>Zay Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/logo (2).png" />
+    <title>Rageh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:ital,wght@0,300;0,400;1,500;1,600&family=Pacifico&family=Roboto+Condensed:ital@1&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
-    <!-- start title -->
-    <div class="title d-none d-lg-block">
-      <div class="container">
-        <div class="d-flex align-items-center">
-          <div class="mt-2 mb-3 me-3">
-            <i class="fa fa-envelope me-2"></i> info@company.com
-          </div>
-          <div class="mt-2 mb-3">
-            <i class="fa fa-phone me-2 mirror"></i>010-020-0340
-          </div>
-          <div class="ms-auto mt-2 mb-3">
-            <i class="fab fa-facebook-f me-2"></i>
-            <i class="fab fa-instagram me-2"></i>
-            <i class="fab fa-twitter me-2"></i>
-            <i class="fab fa-linkedin"></i>
-          </div>
-        </div>
+    <!-- loader -->
+
+    <!-- loader -->
+    <!-- start video -->
+    <video autoplay loop muted id="bg-video">
+      <source src="video/gfp-astro-timelapse.mp4" type="video/mp4" />
+    </video>
+    <!-- end video -->
+    <div class="container">
+      <div class="span d-lg-none">
+        <i class="fa-solid fa-bars"></i>
       </div>
-    </div>
-    <!-- end title -->
-    <!-- start nav -->
-    <nav class="navbar navbar-expand-lg sticky-top shadow">
-      <div class="container">
-        <a class="navbar-brand me-5 pe-5" href="#">Zay</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span><i class="fa-solid fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav m-auto">
-            <li class="nav-item me-5 pe-5">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item me-5 pe-5">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item me-5 pe-5">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <div class="icons d-flex align-items-center ms-auto mt-lg-0 mt-md-3">
-            <div class="social">
-              <i class="fa-solid fa-magnifying-glass ms-lg-4"></i>
-            </div>
-            <div class="social">
-              <i class="fa-solid fa-cart-shopping ms-4"></i>
-              <span class="rounded-pill text-dark translate-middle">7</span>
-            </div>
-            <div class="social">
-              <i class="fa-solid fa-user ms-4"></i>
-              <span class="rounded-pill text-dark translate-middle">+99</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- end nav -->
-    <!-- start landing -->
-    <div class="landing">
-      <div class="container">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active swap"
-              aria-current="true"
-              aria-label="Slide 1"></button>
-            <button
-              type="button"
-              class="swap"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button
-              type="button"
-              class="swap"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row text-center text-lg-start text-md-start">
-                <div
-                  class="col-lg-6 col-md-6 col-sm-12 order-lg-last order-md-last">
-                  <img
-                    src="images/banner_img_01.jpg"
-                    class="d-block img-fluid"
-                    alt="..." />
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 mb-5">
-                  <div class="sub-title mt-5">
-                    <h1>Zay <span>eCommerce</span></h1>
-                    <h3>
-                      Tiny and Perfect eCommerce <br />
-                      Template
-                    </h3>
-                    <p>
-                      Zay Shop is an eCommerce HTML5 CSS template with latest
-                      version of Bootstrap 5 (beta 1). This template is 100%
-                      free provided by <a href="">TemplateMo</a> website. Image
-                      credits go <a href="">to Freepik Stories</a>,
-                      <a href="">Unsplash</a> and <a href=""> Icons 8</a>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row text-center text-lg-start text-md-start">
-                <div
-                  class="col-lg-6 col-md-6 col-sm-12 order-lg-last order-md-last">
-                  <img
-                    src="images/banner_img_02.jpg"
-                    class="d-block img-fluid"
-                    alt="..." />
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 mb-5">
-                  <div class="sub-title mt-5">
-                    <h2 class="main-title">Proident occaecat</h2>
-                    <h3>Aliquip ex ea commodo consequat</h3>
-                    <p>
-                      You are permitted to use this Zay CSS template for your
-                      commercial websites. You are
-                      <span class="fw-bold">not permitted</span> to
-                      re-distribute the template ZIP file in any kind of
-                      template collection websites.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row text-center text-lg-start text-md-start">
-                <div
-                  class="col-lg-6 col-md-6 col-sm-12 order-lg-last order-md-last">
-                  <img
-                    src="images/banner_img_03.jpg"
-                    class="d-block img-fluid"
-                    alt="..." />
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 mb-5">
-                  <div class="sub-title mt-5">
-                    <h2 class="main-title">Repr in voluptate</h2>
-                    <h3>Ullamco laboris nisi ut</h3>
-                    <p>
-                      We bring you 100% free CSS templates for your websites. If
-                      you wish to support TemplateMo, please make a small
-                      contribution via PayPal or tell your friends about our
-                      website. Thank you.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <ul
+        class="nav nav-pills mb-3 bar d-lg-flex"
+        id="pills-tab"
+        role="tablist">
+        <!-- home -->
+        <li class="nav-item" role="presentation">
           <button
-            class="carousel-control-prev"
+            class="nav-link active"
+            id="home"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev" aria-hidden="true">
-              <i class="fa-solid fa-circle-chevron-left"></i>
-            </span>
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true">
+            Home
+            <div class="circle active"></div>
           </button>
+        </li>
+        <!-- about -->
+        <li class="nav-item" role="presentation">
           <button
-            class="carousel-control-next"
+            class="nav-link"
+            id="about"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-about"
             type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next" aria-hidden="true">
-              <i class="fa-solid fa-circle-chevron-right"></i>
-            </span>
+            role="tab"
+            aria-controls="pills-about"
+            aria-selected="false">
+            About
+            <div class="circle"></div>
           </button>
+        </li>
+        <!-- portfolio -->
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-portfolio-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-portfolio"
+            type="button"
+            role="tab"
+            aria-controls="pills-portfolio"
+            aria-selected="false">
+            Portfolio
+            <div class="circle"></div>
+          </button>
+        </li>
+        <!-- contact -->
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false">
+            Contact
+            <div class="circle"></div>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container mt-sm-4 pt-sm-4">
+      <div class="row">
+        <div class="tab-content" id="pills-tabContent">
+          <!-- home -->
+          <div
+            class="tab-pane fade show active home"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="home">
+            <div class="row text-center mt-sm-4 pt-sm-4">
+              <!-- lg -->
+              <div class="col-lg-5 d-lg-block d-none text-center text-lg-start">
+                <div class="main-title text-start mt-5">
+                  <h2>Hello, my name is <span>Eslam</span></h2>
+                  <h1>i'm <span>Web Devoleper</span></h1>
+                  <p>
+                    I'm a web Designer with extensive experience .My expertise
+                    is to create and website design,graphic design, and many
+                    more...
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-7 d-lg-block d-none text-center mt-3">
+                <div class="box">
+                  <img class="img-fluid" src="images/profilee.jpg" alt="" />
+                </div>
+              </div>
+              <!-- lg -->
+              <div class="col-lg-7 text-lg-center d-lg-none">
+                <div class="box">
+                  <img class="img-fluid" src="images/profilee.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-lg-5 d-lg-none">
+                <div class="main-title mt-5 text-lg-start text-center">
+                  <h2>Hello, my name is <span>Eslam</span></h2>
+                  <h1>i'm <span>Web Devoleper</span></h1>
+                  <p>
+                    I'm a web Designer with extensive experience .My expertise
+                    is to create and website design,graphic design, and many
+                    more...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- home -->
+          <!-- about -->
+          <div
+            class="tab-pane fade"
+            id="pills-about"
+            role="tabpanel"
+            aria-labelledby="about">
+            <div class="about">
+              <div class="row">
+                <div class="title text-start">
+                  <h2 class="text-white position-relative pt-5">About Me</h2>
+                  <h4 class="pt-5 text-white pb-3">
+                    I'm Eslam Rageh and <span>Web Devoleper</span>
+                  </h4>
+                </div>
+                <div class="mb-5 pb-3">
+                  <div class="person-info pt-5">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="info pb-3">
+                              <p>Age : <span>21</span></p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="info pb-3">
+                              <p>Phone : <span>0100 771 2100</span></p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="info pb-3">
+                              <p>Website : <span>www.Rageh.com</span></p>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="info pb-3">
+                              <p>Degree : <span>CS</span></p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="info pb-3">
+                              <p>
+                                E_mail : <span>eslamrageh41@gmail.com</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="info pb-3">
+                              <p>City : <span>Mansoura</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="skills">
+                          <div class="skills-items">
+                            <h5>HTML</h5>
+                            <div class="progress">
+                              <div
+                                class="progress-in"
+                                style="width: 0"
+                                data-width="90%"></div>
+                              <div class="skills-percent">90%</div>
+                            </div>
+                          </div>
+                          <div class="skills-items">
+                            <h5>CSS</h5>
+                            <div class="progress">
+                              <div
+                                class="progress-in"
+                                style="width: 0%"
+                                data-width="86%"></div>
+                              <div class="skills-percent">86%</div>
+                            </div>
+                          </div>
+                          <div class="skills-items">
+                            <h5>JS</h5>
+                            <div class="progress">
+                              <div
+                                class="progress-in"
+                                style="width: 0%"
+                                data-width="79%"></div>
+                              <div class="skills-percent">79%</div>
+                            </div>
+                          </div>
+                          <div class="skills-items">
+                            <h5>Bootstrap</h5>
+                            <div class="progress">
+                              <div
+                                class="progress-in"
+                                style="width: 0%"
+                                data-width="86%"></div>
+                              <div class="skills-percent">86%</div>
+                            </div>
+                          </div>
+                          <div class="skills-items">
+                            <h5>PHP</h5>
+                            <div class="progress">
+                              <div
+                                class="progress-in"
+                                style="width: 0%"
+                                data-width="77%"></div>
+                              <div class="skills-percent">77%</div>
+                            </div>
+                          </div>
+                          <div class="skills-items">
+                            <h5>MYSQL</h5>
+                            <div class="progress">
+                              <div
+                                class="progress-in"
+                                style="width: 0%"
+                                data-width="80%"></div>
+                              <div class="skills-percent">80%</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- about -->
+          <!-- portfolio -->
+          <div
+            class="tab-pane fade"
+            id="pills-portfolio"
+            role="tabpanel"
+            aria-labelledby="pills-portfolio-tab">
+            <div class="portfolio text-center">
+              <div class="title text-start pb-5">
+                <h2 class="text-white position-relative pt-5">Portfolio</h2>
+              </div>
+              <div class="row">
+                <div class="portfolio_head">
+                  <h3 class="text-white pb-5">My Last Porjects :</h3>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/Bondi/"
+                          target="blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/bondi.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Bondi</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/Sungla/"
+                          target="blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/sungla.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Sungala</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/Leon/"
+                          target="blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/leon.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Leon</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="BR Architects/index.html"
+                          target="blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/BR Architects.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">BR Architects</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/watch_update/"
+                          target="blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/watch.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Watch</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/Chothes/"
+                          target="blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/clothes.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Clothes</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/food/"
+                          target="_blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/food.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Food</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/HIGHKING/"
+                          target="_blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/highking.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Highking</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/FiU/"
+                          target="_blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/Fui.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">FUI</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/Zay/"
+                          target="_blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/zay.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Zay</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
+                      <div class="card">
+                        <a
+                          href="https://eslamrage7.github.io/Dragon/"
+                          target="_blank"
+                          rel="noopener">
+                          <img
+                            class="img-fluid"
+                            src="portfolio/dragon.png"
+                            alt="" />
+                        </a>
+                        <div class="card-body">
+                          <p class="card-text text-center">Dragon</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio -->
+          <!-- contact -->
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab">
+            <div class="contact text-center">
+              <div class="row">
+                <div class="title text-start pb-5">
+                  <h2 class="text-white position-relative pt-5">Contact Me</h2>
+                </div>
+                <div class="sub-title">
+                  <h3>Have You Any Questions?</h3>
+                  <h6 class="text-white pt-3 pb-3">I'M AT YOUR SERVICE</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="box">
+                    <div class="icon">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <h4>Call Us On</h4>
+                    <h5>0100 771 2100</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="box">
+                    <div class="icon">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <h4>Offline</h4>
+                    <h5>Mansoura</h5>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="box">
+                    <div class="icon">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <h5>eslamrageh41@gmail.com</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-title pt-5">
+                <h3>SEND ME AN EMAIL</h3>
+                <p class="text-white pt-2">I'M VERY RESPONSIVE TO MESSAGES</p>
+              </div>
+              <form class="">
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <input type="text" placeholder="Name" required />
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <input type="email" placeholder="Email" required />
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="mb-3">
+                      <textarea
+                        placeholder="Message"
+                        required
+                        rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3">
+                    <button type="submit" class="">Send Message</button>
+                  </div>
+                  <div class="social col-9">
+                    <ul
+                      class="ul d-flex justify-content-end mt-2 list-unstyled gap-lg-3">
+                      <li>
+                        <a
+                          class="d-block text-light"
+                          href="https://m.facebook.com/eslam.rageh.3"
+                          target="_blank"
+                          ><i
+                            class="fa-brands fa-facebook fa-lg facebook rounded-circle"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="d-block"
+                          href="https://github.com/EslamRage7"
+                          target="_blank"
+                          ><i
+                            class="fa-brands fa-github fa-lg github rounded-circle"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          class="d-block text-light"
+                          href="https://www.linkedin.com/in/eslam-rageh-0b55b9260/"
+                          target="_blank"
+                          ><i
+                            class="fa-brands fa-linkedin fa-lg linkedin rounded-circle"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- contact -->
         </div>
       </div>
     </div>
-    <!-- end landing -->
-    <!-- start categories  -->
-    <div class="categories pt-5 mt-5 text-center">
-      <div class="container">
-        <h1 class="main-title">Categories of The Month</h1>
-        <p class="main-p mb-5 mt-3 pb-3">
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-          officia deserunt mollit anim id est laborum.
-        </p>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="box">
-              <img
-                class="img-fluid rounded-pill"
-                src="images/category_img_01.jpg"
-                alt="" />
-              <h5 class="mt-3 mb-3">Watches</h5>
-              <button class="btn btn-success fs-5 mb-5">Go shop</button>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="box">
-              <img
-                class="img-fluid rounded-pill"
-                src="images/category_img_02.jpg"
-                alt="" />
-              <h5 class="mt-3 mb-3">Shoes</h5>
-              <button class="btn btn-success fs-5 mb-5">Go shop</button>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <div class="box">
-              <img
-                class="img-fluid rounded-pill"
-                src="images/category_img_03.jpg"
-                alt="" />
-              <h5 class="mt-3 mb-3">Accessories</h5>
-              <button class="btn btn-success fs-5 mb-5">Go shop</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end categories  -->
-    <!-- start featured  -->
-    <div class="featured pt-5 mt-5 text-center">
-      <div class="container">
-        <h1 class="main-title">Featured Product</h1>
-        <p class="main-p mb-5 mt-3 pb-3">
-          Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident.
-        </p>
-        <div class="row">
-          <div class="col-lg-4 col-sm-6 text-start mb-5">
-            <div class="card mb-5">
-              <img
-                src="images/feature_prod_01.jpg"
-                class="card-img-top"
-                alt="..." />
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="stars">
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star text-black-50"></i>
-                    <i class="fa-solid fa-star text-black-50"></i>
-                  </div>
-                  <h6 class="ms-auto text-black-50">$240.00</h6>
-                </div>
-                <h5 class="card-title mt-3">
-                  <a class="text-decoration-none text-dark" href=""
-                    >Gym Weight</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-                  in culpa qui officia deserunt.
-                </p>
-                <h6 class="text-black-50">Reviews (24)</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 text-start mb-5">
-            <div class="card mb-5">
-              <img
-                src="images/feature_prod_02.jpg"
-                class="card-img-top"
-                alt="..." />
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="stars">
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star text-black-50"></i>
-                    <i class="fa-solid fa-star text-black-50"></i>
-                  </div>
-                  <h6 class="ms-auto text-black-50">$480.00</h6>
-                </div>
-                <h5 class="card-title mt-3">
-                  <a class="text-decoration-none text-dark" href=""
-                    >Cloud Nike Shoes</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Aenean gravida dignissim finibus. Nullam ipsum diam, posuere
-                  vitae pharetra sed, commodo ullamcorper.
-                </p>
-                <h6 class="text-black-50">Reviews (48)</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 text-start mb-5">
-            <div class="card mb-5">
-              <img
-                src="images/feature_prod_03.jpg"
-                class="card-img-top"
-                alt="..." />
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="stars">
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                    <i class="fa-solid fa-star yellow"></i>
-                  </div>
-                  <h6 class="ms-auto text-black-50">$360.00</h6>
-                </div>
-                <h5 class="card-title mt-3">
-                  <a class="text-decoration-none text-dark" href=""
-                    >Gym Weight</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar
-                  sagittis diam, et scelerisque ipsum lobortis nec.
-                </p>
-                <h6 class="text-black-50">Reviews (74)</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end featured -->
-    <!-- start footer -->
-    <footer class="text-lg-start text-center text-sm-center text-white pt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h1 class="text-success pb-3 head-footer">Zay Shop</h1>
-            <div class="info mt-3 mb-5">
-              <div class="">
-                <i class="fa-solid fa-location-dot me-2"></i>123 Consectetur at
-                ligula 10660
-              </div>
-              <div class="mt-2">
-                <a href="">
-                  <i class="fa fa-phone me-2 mirror"></i>010-020-0340</a
-                >
-              </div>
-              <div class="mt-2 mb-5">
-                <a href="">
-                  <i class="fa fa-envelope me-2"></i> info@company.com</a
-                >
-              </div>
-            </div>
-            <div class="icons">
-              <i class="fab fa-facebook-f fa-lg rounded-circle icon"></i>
-              <i class="fab fa-instagram fa-lg rounded-circle icon"></i>
-              <i class="fab fa-twitter fa-lg rounded-circle icon"></i>
-              <i class="fab fa-linkedin fa-lg rounded-circle icon"></i>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h2 class="pb-3 head-footer">Products</h2>
-            <ul class="list-unstyled lh-lg gap-5">
-              <a href="">
-                <li>Luxury</li>
-              </a>
-              <a href=""> <li>Sport Wear</li></a>
-              <a href=""><li>Men's Shoes</li></a>
-              <a href=""><li>Women's Shoes</li></a>
-              <a href=""> <li>Popular Dress</li></a>
-              <a href=""><li>Gym Accessories</li></a>
-              <a href=""> <li>Sport Shoes</li></a>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <h2 class="pb-3 head-footer">Further Info</h2>
-            <ul class="list-unstyled lh-lg gap-5">
-              <a href=""> <li>Home</li></a>
-              <a href=""><li>About Us</li></a>
-              <a href=""><li>Shop Locations</li></a>
-              <a href=""> <li>FAQs</li></a>
-              <a href=""><li>Contact</li></a>
-            </ul>
-            <label class="sr-only" for="subscribeEmail">Email address</label>
-            <div class="input-group mb-2">
-              <input
-                type="text"
-                class="form-control text-muted"
-                id="subscribeEmail"
-                placeholder="Email address" />
-              <div class="btn btn-success text-black-50">Subscribe</div>
-            </div>
-          </div>
-          <div class="mt-5 mb-5 text-center">
-            <p class="main-p">
-              Copyright © 2021 Company Name | Designed by <a href="">Rageh</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/jquery-3.6.1.min.js"></script>
   </body>
 </html>
